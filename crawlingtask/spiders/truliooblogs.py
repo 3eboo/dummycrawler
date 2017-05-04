@@ -32,10 +32,8 @@ class ArgSpider(CrawlSpider):
     def parse(self, response):
         """
 
-        @url http://stackoverflow.com/search?q=%5Bpython%5Dfiltering"
-        @returns items 15
-        @returns requests 0 1
-        @scrapes votes answers date link
+        @url url to crawl"
+        @scrapes main info about each blog
 
         """
         sel = Selector(response)
