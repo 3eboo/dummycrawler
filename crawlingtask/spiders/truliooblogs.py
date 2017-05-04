@@ -25,7 +25,7 @@ class ArgSpider(CrawlSpider):
         self.allowed_domains = ["trulioo.com"]
         self.start_urls = ["https://www.trulioo.com/blog"]
         self.rules = [Rule(SgmlLinkExtractor(unique=True,
-                                             restrict_css=None),
+                                             restrict_css='[class="qodef-blog-holder qodef-blog-type-masonry qodef-appeared"],.qodef-pagination'),
                            callback='parse',
                            follow=True)]
 
