@@ -16,21 +16,7 @@ class Question(Item):
 
 
 class ArgSpider(CrawlSpider):
-    """
 
-    Scrapes first 15 stackoverflow.com questions containing "query" within a given "tag" and
-    displays links, number of votes etc in the terminal.
-
-    Usage:
-
-      ~: scrapy crawl StackSpider -a tag=[your tag] -a query=[your query]
-
-    For example
-
-       ~: scrapy crawl StackSpider -a tag=python -a query="crawling a website"
-
-
-    """
 
     name = "StackSpider"
 
